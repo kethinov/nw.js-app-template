@@ -1,4 +1,4 @@
-<img src='https://raw.github.com/kethinov/node-webkit-app-template/master/dev/appicon.png' alt='' width='20' height='20'> node-webkit app template [![Gittip](http://img.shields.io/gittip/kethinov.png)](https://www.gittip.com/kethinov/)
+<img src='https://raw.github.com/kethinov/node-webkit-app-template/master/dev/appicon.png' alt='' width='24' height='24'> node-webkit app template [![Gittip](http://img.shields.io/gittip/kethinov.png)](https://www.gittip.com/kethinov/)
 ===
 
 Sample [node-webkit](https://github.com/rogerwang/node-webkit) app with all the boilerplate you need to just get started coding on your app with simple build scripts for ~~Linux~~, Mac, and ~~Windows~~.
