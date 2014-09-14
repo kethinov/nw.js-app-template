@@ -12,17 +12,17 @@ First, just [download this code](https://github.com/kethinov/node-webkit-app-tem
 
 Then start hacking on your app and run it!
 
-Run the app
+Run the app without building it
 ===
 
 - Mac: open `dev/mac/start.command`.
 
-Build the app
+Build an app executable for distribution
 ===
 
 - Mac: open `dev/mac/build.command`. Fully-built .app files will be located in the `build` directory.
 
-Customize things
+Customizing your app
 ===
 
 To change the app's name, you need to replace all occurances of "App Name" in the following files:
