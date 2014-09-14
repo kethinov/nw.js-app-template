@@ -1,0 +1,39 @@
+{
+  "name": "App Name",
+  "description": "",
+  "author": "",
+  "version": "0.1.0",
+  "homepage": "",
+  "license": "",
+  "main": "main.html",
+  "readmeFilename": "README.md",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "engineStrict": true,
+  "window": {
+    "show": false,
+    "toolbar": false,
+    "width": 720,
+    "min_width": 720,
+    "max_width": 720,
+    "height": 480,
+    "min_height": 480,
+    "max_height": 480
+  },
+  "dependencies": {
+  },
+  "jshintConfig": {
+    "camelcase": true,
+    "curly": true,
+    "devel": true,
+    "evil": true,
+    "indent": 2,
+    "node": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/some/place/somewhere"
+  },
+  "private": true
+}

@@ -26,3 +26,20 @@ node_modules
 
 # Users Environment Variables
 .lock-wscript
+
+*.csv
+*.dat
+*.out
+*.gz
+
+results
+
+npm-debug.log
+.DS_Store
+
+.jshintrc
+
+node-webkit-v*
+build
+
+bower_components
