@@ -5,7 +5,12 @@ Sample [node-webkit](https://github.com/rogerwang/node-webkit) app with all the 
 
 Currently only Mac is supported, but Linux and Windows are coming soon.
 
-To get started, just clone this repo, run the app, and start hacking on it!
+Get started
+===
+
+First, just [download this code](https://github.com/kethinov/node-webkit-app-template/archive/master.zip).
+
+Then start hacking on your app and run it!
 
 Run the app
 ===
