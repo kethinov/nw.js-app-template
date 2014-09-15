@@ -79,7 +79,7 @@
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>com.apple.ostype</key>
-				<string>Bubble Painter</string>
+				<string>App Name</string>
 			</dict>
 		</dict>
 	</array>
