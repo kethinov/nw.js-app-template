@@ -3,7 +3,7 @@ cd "`dirname "$0"`/../"
 nw=$(cat nwversion.txt)
 appname=$(cat appname.txt)
 
-cd "`dirname "$0"`/../../"
+cd ..
 
 hash npm 2>/dev/null || {
   echo >&2 "You must install Node.js and npm to run this program: http://nodejs.org"
