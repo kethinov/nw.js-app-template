@@ -41,4 +41,5 @@ if [ ! -d "dev/linux/node-webkit-v$nw-linux-ia$nwa" ]; then
   mv node-webkit-v$nw-linux-$nwa dev/linux/
 fi
 
-sed -i 's/udev\.so\.0/udev.so.1/g' ./dev/linux/node-webkit-v$nw-linux-$nwa/nw app/
+sed -i 's/udev\.so\.0/udev.so.1/g' ./dev/linux/node-webkit-v$nw-linux-$nwa/nw
+./dev/linux/node-webkit-v$nw-linux-$nwa/nw app/
