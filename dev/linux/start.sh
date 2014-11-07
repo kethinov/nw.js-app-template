@@ -9,6 +9,11 @@ hash npm 2>/dev/null || {
   exit 1
 }
 
+hash curl 2>/dev/null || {
+  echo >&2 "You must install curl to run this program."
+  exit 1
+}
+
 if [ ! -d "app/node_modules" ]; then
   cd app
   mv package.json package.json.backup
