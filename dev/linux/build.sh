@@ -1,6 +1,8 @@
 cd "`dirname "$0"`/../"
 
 nw=$(cat nwversion.txt)
+# nwa=$(cat nwarch.txt)
+nwa=64
 appname=$(cat appname.txt)
 
 cd ..
@@ -31,12 +33,12 @@ if [ ! -d "app/bower_components" ]; then
   cd ..
 fi
 
-if [ ! -d "dev/linux/node-webkit-v$nw-linux-ia32" ]; then
+if [ ! -d "dev/linux/node-webkit-v$nw-linux-ia$nwa" ]; then
   echo "Downloading node-webkit v$nw development environment..."
-  wget http://dl.node-webkit.org/v$nw/node-webkit-v$nw-linux-ia32.tar.gz
-  tar -zxf node-webkit-v$nw-linux-ia32.tar.gz -C .
-  rm node-webkit-v$nw-linux-ia32.tar.gz
-  mv node-webkit-v$nw-linux-ia32 dev/linux/
+  wget http://dl.node-webkit.org/v$nw/node-webkit-v$nw-linux-ia$nwa.tar.gz
+  tar -zxf node-webkit-v$nw-linux-ia$nwa.tar.gz -C .
+  rm node-webkit-v$nw-linux-ia$nwa.tar.gz
+  mv node-webkit-v$nw-linux-ia$nwa dev/linux/
 fi
 
 if [ ! -d "build" ]; then
