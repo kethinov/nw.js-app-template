@@ -38,4 +38,4 @@ if [ ! -d "dev/linux/node-webkit-v$nw-linux-ia32" ]; then
   mv node-webkit-v$nw-linux-ia32 dev/linux/
 fi
 
-./dev/linux/node-webkit-v$nw-linux-ia32/node-webkit.app/Contents/MacOS/node-webkit app/
+./dev/linux/node-webkit-v$nw-linux-ia32/nw app/
