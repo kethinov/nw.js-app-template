@@ -34,7 +34,7 @@ if [ ! -d "app/bower_components" ]; then
   cd ..
 fi
 
-if [ ! -d "dev/linux/node-webkit-v$nw-linux-ia$nwa" ]; then
+if [ ! -d "dev/linux/node-webkit-v$nw-linux-$nwa" ]; then
   echo "Downloading node-webkit v$nw development environment..."
   wget http://dl.node-webkit.org/v$nw/node-webkit-v$nw-linux-$nwa.tar.gz
   tar -zxf node-webkit-v$nw-linux-$nwa.tar.gz -C .

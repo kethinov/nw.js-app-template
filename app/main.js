@@ -3,7 +3,7 @@ var gui = require('nw.gui'),
     nativeMenuBar = new gui.Menu({type: 'menubar'});
 
 // render native mac menus
-if (nativeMenuBar) {
+if (nativeMenuBar.createMacBuiltin) {
   nativeMenuBar.createMacBuiltin('App Name', {
     // hideEdit: true,
     // hideWindow: true
