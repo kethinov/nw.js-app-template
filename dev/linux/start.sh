@@ -1,22 +1,3 @@
-#!/bin/bash
-
-# udev symlink fuckery
-paths=(
-  "/lib/x86_64-linux-gnu/libudev.so.1" # Ubuntu, Xubuntu, Mint
-  "/usr/lib64/libudev.so.1" # SUSE, Fedora
-  "/usr/lib/libudev.so.1" # Arch, Fedora 32bit
-  "/lib/i386-linux-gnu/libudev.so.1" # Ubuntu 32bit
-)
-for i in "${paths[@]}"
-do
-  if [ -f $i ]
-  then
-    ln -sf "$i" /opt/myapp/libudev.so.0
-    break
-  fi
-done
-
-
 cd "`dirname "$0"`/../"
 
 nw=$(cat nwversion.txt)
@@ -60,4 +41,4 @@ if [ ! -d "dev/linux/node-webkit-v$nw-linux-ia$nwa" ]; then
   mv node-webkit-v$nw-linux-$nwa dev/linux/
 fi
 
-./dev/linux/node-webkit-v$nw-linux-$nwa/nw app/
+sed -i 's/udev\.so\.0/udev.so.1/g' ./dev/linux/node-webkit-v$nw-linux-$nwa/nw app/
