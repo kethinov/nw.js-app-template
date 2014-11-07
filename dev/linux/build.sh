@@ -34,7 +34,7 @@ fi
 if [ ! -d "dev/linux/node-webkit-v$nw-linux-ia32" ]; then
   echo "Downloading node-webkit v$nw development environment..."
   wget http://dl.node-webkit.org/v$nw/node-webkit-v$nw-linux-ia32.tar.gz
-  tar -zxfv node-webkit-v$nw-linux-ia32.tar.gz -C .
+  tar -zxf node-webkit-v$nw-linux-ia32.tar.gz -C .
   rm node-webkit-v$nw-linux-ia32.tar.gz
   mv node-webkit-v$nw-linux-ia32 dev/linux/
 fi
