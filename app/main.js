@@ -3,11 +3,13 @@ var gui = require('nw.gui'),
     nativeMenuBar = new gui.Menu({type: 'menubar'});
 
 // render native mac menus
-nativeMenuBar.createMacBuiltin('App Name', {
-  // hideEdit: true,
-  // hideWindow: true
-});
-app.menu = nativeMenuBar;
+if (nativeMenuBar) {
+  nativeMenuBar.createMacBuiltin('App Name', {
+    // hideEdit: true,
+    // hideWindow: true
+  });
+  app.menu = nativeMenuBar;
+}
 
 // handles cmd+q on OS X
 app.on('close', function() {
