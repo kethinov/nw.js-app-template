@@ -1,9 +1,12 @@
 cd "`dirname "$0"`/../"
 
 nw=$(cat nwversion.txt)
-# nwa=$(cat nwarch.txt)
-nwa=x64
-# nwa=ia32
+nwa=$(cat nwarch.txt)
+if [ "$nwa" = "64" ]; then
+  nwa=x64
+else
+  nwa=ia32
+fi
 appname=$(cat appname.txt)
 
 cd ..

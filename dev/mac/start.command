@@ -1,8 +1,14 @@
 cd "`dirname "$0"`/../"
 
 nw=$(cat nwversion.txt)
+nwa=$(cat nwarch.txt)
+if [ "$nwa" = "64" ]; then
+  nwa=x64
+else
+  nwa=ia32
+fi
 
-cd "`dirname "$0"`/../../"
+cd ..
 
 hash npm 2>/dev/null || {
   echo >&2 "You must install Node.js and npm to run this program: http://nodejs.org"
@@ -30,12 +36,12 @@ if [ ! -d "app/bower_components" ]; then
   cd ..
 fi
 
-if [ ! -d "dev/mac/node-webkit-v$nw-osx-ia32" ]; then
+if [ ! -d "dev/mac/node-webkit-v$nw-osx-$nwa" ]; then
   echo "Downloading node-webkit v$nw development environment..."
-  curl -sS http://dl.node-webkit.org/v$nw/node-webkit-v$nw-osx-ia32.zip > nw.zip
+  curl -sS http://dl.node-webkit.org/v$nw/node-webkit-v$nw-osx-$nwa.zip > nw.zip
   unzip nw.zip -d .
   rm nw.zip
-  mv node-webkit-v$nw-osx-ia32 dev/mac/
+  mv node-webkit-v$nw-osx-$nwa dev/mac/
 fi
 
-./dev/mac/node-webkit-v$nw-osx-ia32/node-webkit.app/Contents/MacOS/node-webkit app/
+./dev/mac/node-webkit-v$nw-osx-$nwa/node-webkit.app/Contents/MacOS/node-webkit app/
