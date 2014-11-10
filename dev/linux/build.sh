@@ -55,4 +55,6 @@ rm -rf "build/$appname"
 cd app
 zip -r ../${PWD##*/}.nw *
 cd ..
-mv app.zip build/$appname
+mv app.nw build/$appname
+
+# todo: Step 2a or Step 2b
