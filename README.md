@@ -1,9 +1,9 @@
 <img src='https://raw.github.com/kethinov/node-webkit-app-template/master/dev/appicon.png' alt='' width='24' height='24'> node-webkit app template [![Gittip](http://img.shields.io/gittip/kethinov.png)](https://www.gittip.com/kethinov/)
 ===
 
-Sample [node-webkit](https://github.com/rogerwang/node-webkit) app with all the boilerplate you need to just get started coding on your app with simple build scripts for ~~Linux~~, Mac, and ~~Windows~~.
+Sample [node-webkit](https://github.com/rogerwang/node-webkit) app with all the boilerplate you need to just get started coding on your app with simple build scripts for Linux, Mac, and ~~Windows~~.
 
-Currently only Mac is supported, but Linux and Windows are coming soon.
+Currently only Mac is fully supported. Linux is partially supported (run but not build) and Windows is coming soon.
 
 Get started
 ===
@@ -16,11 +16,13 @@ Run the app without building it
 ===
 
 - Mac: open `dev/mac/start.command`.
+- Linux: open `dev/linux/start.sh`.
 
 Build an app executable for distribution
 ===
 
 - Mac: open `dev/mac/build.command`. Fully-built .app files will be located in the `build` directory.
+- Linux: open `dev/linux/build.sh`. *This is a work in progress. Not fully functional yet.*
 
 Customizing your app
 ===
