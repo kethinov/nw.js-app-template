@@ -37,12 +37,13 @@ To change the app's name, you need to replace all occurances of "App Name" in th
 
 And optionally in:
 
-- `.package.npm.json` (hack file needed to deal with an [npm bug](https://github.com/npm/npm/issues/5490))
 - `bower.json` (bower doesn't allow name field to be empty)
 
 To change the app icon, replace `dev/appicon.png` with your app icon. A resolution of 1024x1024 or higher is recommended to support all OS and screen combinations.
 
 To change the version of node-webkit your app is built from, change the version number in `dev/nwversion.txt`.
+
+To change the architecture node-webkit is targeting, change architecture number in `dev/nwarch`. Accaptable values are `32` and `64`.
 
 License
 ===
