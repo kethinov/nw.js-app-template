@@ -27,23 +27,35 @@ Build an app executable for distribution
 Customizing your app
 ===
 
-To change the app's name, you need to replace all occurances of "App Name" in the following files:
+App name
+---
 
-- `main.html` (HTML page title)
-- `main.js` (for native Mac menus)
-- `package.json` (node-webkit derives app name for the OS from this file)
-- `dev/appname.txt` (used for builds)
-- `dev/mac/Info.plist` (Mac OS X derives app name for the OS from this file)
+To set the app's name, you need to replace the placeholder text in the following files:
 
-And optionally in:
+All platforms:
+- `main.html`: HTML page title sets window title
+- `dev/appname.txt`: sets the app's name on the task manager / dock (for builds only)
+
+Mac only:
+- `dev/mac/Info.plist`: sets app name in the native Mac menubar
+- `main.js`: see the line which reads `nativeMenuBar.createMacBuiltin('App Name', { ...` to set the app's name in the native Mac menubar's menus
 
 - `bower.json` (bower doesn't allow name field to be empty)
 
-To change the app icon, replace `dev/appicon.png` with your app icon. A resolution of 1024x1024 or higher is recommended to support all OS and screen combinations.
+App icon
+---
 
-To change the version of node-webkit your app is built from, change the version number in `dev/nwversion.txt`.
+To set the app icon, replace `dev/appicon.png` with your app icon. A resolution of 1024x1024 or higher is recommended to support all OS and screen combinations.
 
-To change the architecture node-webkit is targeting, change architecture number in `dev/nwarch.txt`. Acceptable values are `32` and `64`.
+node-webkit version
+---
+
+To set the version of node-webkit your app is built from, change the version number in `dev/nwversion.txt`. See what the most recent version is [here](https://github.com/rogerwang/node-webkit#downloads).
+
+64 bit vs. 32 bit
+---
+
+To set the architecture node-webkit is targeting, change architecture number in `dev/nwarch.txt`. Acceptable values are `32` and `64`.
 
 License
 ===
