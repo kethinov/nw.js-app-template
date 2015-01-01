@@ -22,7 +22,7 @@ Build an app executable for distribution
 ===
 
 - Mac: open `dev/mac/build.command`. Fully-built .app files will be located in the `build` directory.
-- Linux: open `dev/linux/build.sh`. *This is a work in progress. Not fully functional yet.*
+- Linux: open `dev/linux/build.sh`. *[This is a work in progress. Not fully functional yet.](https://github.com/kethinov/node-webkit-app-template/issues/1)*
 
 Customizing your app
 ===
