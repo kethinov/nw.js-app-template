@@ -3,7 +3,7 @@
 
 Sample [node-webkit](https://github.com/rogerwang/node-webkit) app with all the boilerplate you need to just get started coding on your app with simple build scripts for Linux, Mac, and ~~Windows~~.
 
-Currently only Mac is fully supported. Linux is partially supported ([run but not build](https://github.com/kethinov/node-webkit-app-template/issues/1)) and Windows is coming soon.
+Currently only Mac is fully supported. Linux is partially supported ([run but not build](https://github.com/kethinov/node-webkit-app-template/issues/1)) and Windows is [coming soon](https://github.com/kethinov/node-webkit-app-template/issues/2).
 
 Get started
 ===
