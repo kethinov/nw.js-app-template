@@ -1,14 +1,14 @@
-<img src='https://raw.github.com/kethinov/node-webkit-app-template/master/dev/appicon.png' alt='' width='24' height='24'> node-webkit app template [![Gittip](http://img.shields.io/gittip/kethinov.png)](https://www.gittip.com/kethinov/)
+<img src='https://raw.github.com/kethinov/nw.js-app-template/master/dev/appicon.png' alt='' width='24' height='24'> nw.js app template [![Gittip](http://img.shields.io/gittip/kethinov.png)](https://www.gittip.com/kethinov/)
 ===
 
-Sample [node-webkit](https://github.com/rogerwang/node-webkit) app with all the boilerplate you need to just get started coding on your app with simple build scripts for Linux, Mac, and ~~Windows~~.
+Sample [nw.js](https://github.com/nwjs/nw.js) app with all the boilerplate you need to just get started coding on your app with simple build scripts for Linux, Mac, and ~~Windows~~.
 
-Currently only Mac is fully supported. Linux is partially supported ([run but not build](https://github.com/kethinov/node-webkit-app-template/issues/1)) and Windows is [coming soon](https://github.com/kethinov/node-webkit-app-template/issues/2).
+Currently only Mac is fully supported. Linux is partially supported ([run but not build](https://github.com/kethinov/nw.js-app-template/issues/1)) and Windows is [coming soon](https://github.com/kethinov/nw.js-app-template/issues/2).
 
 Get started
 ===
 
-First, just [download this code](https://github.com/kethinov/node-webkit-app-template/archive/master.zip).
+First, just [download this code](https://github.com/kethinov/nw.js-app-template/archive/master.zip).
 
 Then start hacking on your app and run it!
 
@@ -22,7 +22,7 @@ Build an app executable for distribution
 ===
 
 - Mac: open `dev/mac/build.command`. Fully-built .app files will be located in the `build` directory.
-- Linux: open `dev/linux/build.sh`. *[This is a work in progress. Not fully functional yet.](https://github.com/kethinov/node-webkit-app-template/issues/1)*
+- Linux: open `dev/linux/build.sh`. *[This is a work in progress. Not fully functional yet.](https://github.com/kethinov/nw.js-app-template/issues/1)*
 
 Customizing your app
 ===
@@ -47,15 +47,15 @@ App icon
 
 To set the app icon, replace `dev/appicon.png` with your app icon. A resolution of 1024x1024 or higher is recommended to support all OS and screen combinations.
 
-node-webkit version
+nw.js version
 ---
 
-To set the version of node-webkit your app is built from, change the version number in `dev/nwversion.txt`. See what the most recent version is [here](https://github.com/rogerwang/node-webkit#downloads).
+To set the version of nw.js your app is built from, change the version number in `dev/nwversion.txt`. See what the most recent version is [here](https://github.com/nwjs/nw.js#downloads).
 
 64 bit vs. 32 bit
 ---
 
-To set the architecture node-webkit is targeting, change architecture number in `dev/nwarch.txt`. Acceptable values are `32` and `64`.
+To set the architecture nw.js is targeting, change architecture number in `dev/nwarch.txt`. Acceptable values are `32` and `64`.
 
 License
 ===

@@ -34,8 +34,8 @@ if [ ! -d "app/bower_components" ]; then
 fi
 
 if [ ! -d "dev/mac/node-webkit-v$nw-osx-$nwa" ]; then
-  echo "Downloading node-webkit v$nw development environment..."
-  curl -sS http://dl.node-webkit.org/v$nw/node-webkit-v$nw-osx-$nwa.zip > nw.zip
+  echo "Downloading nw.js v$nw development environment..."
+  curl -sS http://dl.nwjs.io/v$nw/node-webkit-v$nw-osx-$nwa.zip > nw.zip
   unzip nw.zip -d .
   rm nw.zip
   mv node-webkit-v$nw-osx-$nwa dev/mac/
