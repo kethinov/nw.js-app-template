@@ -11,7 +11,7 @@ fi
 cd ..
 
 hash npm 2>/dev/null || {
-  echo >&2 "You must install Node.js and npm to run this program: http://nodejs.org"
+  echo >&2 "You must install npm to run this program: http://npmjs.org"
   exit 1
 }
 
