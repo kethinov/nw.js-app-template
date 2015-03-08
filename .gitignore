@@ -40,6 +40,7 @@ npm-debug.log
 .jshintrc
 
 node-webkit-v*
+nwjs-v*
 build
 
 bower_components

@@ -32,13 +32,13 @@ if [ ! -d "app/bower_components" ]; then
   cd ..
 fi
 
-if [ ! -d "dev/linux/node-webkit-v$nw-linux-$nwa" ]; then
-  echo "Downloading node-webkit v$nw development environment..."
-  wget http://dl.node-webkit.org/v$nw/node-webkit-v$nw-linux-$nwa.tar.gz
-  tar -zxf node-webkit-v$nw-linux-$nwa.tar.gz -C .
-  rm node-webkit-v$nw-linux-$nwa.tar.gz
-  mv node-webkit-v$nw-linux-$nwa dev/linux/
+if [ ! -d "dev/linux/nwjs-v$nw-linux-$nwa" ]; then
+  echo "Downloading nwjs v$nw development environment..."
+  wget http://dl.nwjs.org/v$nw/nwjs-v$nw-linux-$nwa.tar.gz
+  tar -zxf nwjs-v$nw-linux-$nwa.tar.gz -C .
+  rm nwjs-v$nw-linux-$nwa.tar.gz
+  mv nwjs-v$nw-linux-$nwa dev/linux/
 fi
 
-sed -i 's/udev\.so\.0/udev.so.1/g' ./dev/linux/node-webkit-v$nw-linux-$nwa/nw
-./dev/linux/node-webkit-v$nw-linux-$nwa/nw app/
+sed -i 's/udev\.so\.0/udev.so.1/g' ./dev/linux/nwjs-v$nw-linux-$nwa/nw
+./dev/linux/nwjs-v$nw-linux-$nwa/nw app/
