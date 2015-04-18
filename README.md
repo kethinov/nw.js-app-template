@@ -56,8 +56,3 @@ To set the version of nw.js your app is built from, change the version number in
 ---
 
 To set the architecture nw.js is targeting, change architecture number in `dev/nwarch.txt`. Acceptable values are `32` and `64`.
-
-License
-===
-
-All original code is licensed under the [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/). Commercial and noncommercial use is permitted with attribution.
