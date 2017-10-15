@@ -1,5 +1,7 @@
-<img src='https://raw.github.com/kethinov/nw.js-app-template/master/dev/appicon.png' alt='' width='24' height='24'> nw.js app template [![Gittip](http://img.shields.io/gittip/kethinov.png)](https://www.gittip.com/kethinov/)
+<img src='https://raw.github.com/kethinov/nw.js-app-template/master/dev/appicon.png' alt='' width='24' height='24'> nw.js app template
 ===
+
+**NOT CURRENTLY MAINTAINED AND MAY NOT WORK WITH THE LATEST VERSION OF NW.JS.**
 
 Sample [nw.js](https://github.com/nwjs/nw.js) app with all the boilerplate you need to just get started coding on your app with simple build scripts for Linux, Mac, and ~~Windows~~.
 
