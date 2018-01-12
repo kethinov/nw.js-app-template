@@ -5,7 +5,7 @@
 
 Sample [nw.js](https://github.com/nwjs/nw.js) app with all the boilerplate you need to just get started coding on your app with simple build scripts for Linux, Mac, and ~~Windows~~.
 
-Currently only Mac is fully supported. Linux is partially supported ([run but not build](https://github.com/kethinov/nw.js-app-template/issues/1)) and Windows is [coming soon](https://github.com/kethinov/nw.js-app-template/issues/2).
+Currently only Mac is fully supported. Linux is partially supported ([run but not build](https://github.com/kethinov/nw.js-app-template/issues/1)) and Windows is [not supported](https://github.com/kethinov/nw.js-app-template/issues/2).
 
 Get started
 ===
